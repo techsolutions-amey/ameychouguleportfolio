@@ -1,0 +1,259 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-image: url('background.jpg'); /* Add your background image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+header {
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Ensure it's above other content */
+    justify-content: space-between; /* Place items at the start and end */
+}
+
+.header-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+/* Add padding to the body to account for the fixed header */
+body {
+    padding-top: 80px; /* Adjust the value to your liking */
+}
+
+.navbar {
+    text-align: right;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ffff; /* Neon Cyan */
+}
+
+
+/* Hero section styles */
+#hero {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 100px 0;
+    position: relative;
+    z-index: 0;
+    display: flex; /* Make the hero section a flex container */
+    margin-top: -20px;
+    justify-content: space-between; /* Place items at the start and end */
+}
+
+.profile-pic {
+    flex: 1; /* Occupy 50% of the container */
+    text-align: center; /* Center the image horizontally */
+    margin: 0 110px; /* Add some spacing to the sides */
+}
+
+.profile-pic img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid #00ffff; /* Neon Cyan */
+    margin-bottom: 150px;
+    margin-top: -30px;
+    filter: brightness(120%); /* Add some glow effect */
+}
+
+.hero-text {
+    flex: 1; /* Occupy 50% of the container */
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Add some padding to the text */
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-top: -150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.hero-text p {
+    font-size: 30px;
+    color: #00ffff; /* Neon Cyan */
+}
+
+.description {
+    flex: 1; /* Occupy 50% of the container */
+    text-align: center; /* Center the description text horizontally */
+    padding: 20px; /* Add some padding to the description */
+}
+
+.description p {
+    font-size: 18px;
+    color: #fff; /* Text color for the description */
+    line-height: 1.5;
+}
+
+/* Neon text animation */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.8);
+    }
+}
+
+/* About section styles */
+#about {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 32px;
+    color: #fff;
+}
+
+#about p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* Projects section styles */
+/* Projects section styles */
+#projects {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project {
+ 
+    flex: calc(33.33% - 20px); /* Set each project to occupy 33.33% of the container width with some gap */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.project img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+
+/* Contact section styles */
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: inline;
+    margin: 10px;
+}
+
+.contact-list img {
+    width: 40px; /* Adjust the size of the mini logos */
+    height: 40px;
+    border-radius: 10%;
+    border: 2px solid #00ffff; /* Neon Cyan */
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.contact-list a {
+    text-decoration: none;
+}
+
+.contact-list img:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
