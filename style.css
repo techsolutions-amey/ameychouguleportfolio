@@ -99,7 +99,7 @@ body {
 /* Hero section styles */
 #hero {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    padding: 100px 0;
+    padding: 10px 0;
     position: relative;
     z-index: 0;
     display: flex; /* Make the hero section a flex container */
@@ -108,8 +108,8 @@ body {
 }
 @media (max-width: 768px) {
     .profile-pic img {
-        width: 200px;
-        height: 200px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 30px;
     }
 
@@ -131,16 +131,16 @@ body {
 .profile-pic {
     flex: 1; /* Occupy 50% of the container */
     text-align: center; /* Center the image horizontally */
-    margin: 0 110px; /* Add some spacing to the sides */
+    margin: 0 10px; /* Add some spacing to the sides */
 }
 
 .profile-pic img {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #00ffff; /* Neon Cyan */
     margin-bottom: 150px;
-    margin-top: -30px;
+    margin-top: 0;
     filter: brightness(120%); /* Add some glow effect */
 }
 
